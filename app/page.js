@@ -2,100 +2,48 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <div className="flex justify-center flex-col gap-4 items-center text-white h-[44vh] ">
+      <div className="font-bold flex gap-2 justify-center items-center text-5xl ">Buy me a Chai <span><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmR5dG1wMHk2dWFrYnF5dGlscTk5NW8zaGc3cThlM3g0NGgxc211dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L3CXg9Mx6YITJK0FpG/giphy.webp"  width={75} alt="Loading..." /></span></div>
+      <p>
+        A crowdfunding platform for creators. Get funded by your fans and followers. Start Now!
+      </p>
+      <div>
+        <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
+      </div>
     </div>
+    <div className="bg-white h-1 opacity-10">
+    </div>
+
+    <div className="text-white container mx-auto py-28 pt-14">
+      <h2 className="text-3xl font-bold text-center mb-20">Ek cup chai ho jae...</h2>
+      <div className="flex gap-5 justify-around">
+      <div className="item space-y-3 flex flex-col items-center justify-center">
+        <img className="bg-slate-400 rounded-full p-2 text-black" width={100} src="https://i.pinimg.com/736x/96/79/77/9679774173a92eb903119950fe4c3558.jpg" alt="" />
+        <p className="font-bold text-center">Feel fresh with every sip of tea..!</p>
+        <p className="text-center">Matka Chai-tradition served in every sip..!</p>
+      </div>
+      <div className="item space-y-3 flex flex-col items-center justify-center">
+        <img className="bg-slate-400 rounded-full p-2 text-black" width={100} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaF6j_dA2w9-FJmZK74QGHnAyq_vIk1lHHNA&s" alt="" />
+        <p className="font-bold">Happiness is a cup of tea with you</p>
+        <p className="text-center">Matka Chai-tradition served in every sip..!</p>
+      </div>
+      <div className="item space-y-3 flex flex-col items-center justify-center">
+        <img className="bg-slate-400 rounded-full p-2 text-black" width={100} src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-cartoon-hand-drawn-watercolor-color-poster-png-image_3808798.jpg" alt="" />
+        <p className="font-bold">Chai gossip with friends</p>
+        <p className="text-center">Matka Chai-tradition served in every sip..!</p>
+      </div>
+      </div>
+    </div>
+
+    <div className="bg-white h-1 opacity-10">
+    </div>
+    <div className="text-white container mx-auto py-28 pt-14 flex flex-col justify-center items-center ">
+      <h2 className="text-3xl font-bold text-center mb-20">Learn more about us</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MKFIIzTJw1Y?si=lpr6L6C-vHHjw3ay" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      </div>
+    </>
   );
 }
